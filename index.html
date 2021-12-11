@@ -80,32 +80,32 @@
                     <h3>Counting tool for card games.</h3>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Player 1" aria-label="" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Player 2" aria-label="" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Player 1" value="Kevin" id="player1" aria-label="" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Player 2" value="Luxi" id="player2" aria-label="" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Player 3" aria-label="" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Player 4" aria-label="" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Player 3" value="Jannik" id="player3" aria-label="" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Player 4" value="Trost" id="player4" aria-label="" aria-describedby="basic-addon1">
                 </div>
                 
                 <div class="heading">
-                    <a href="#" class="myBtn">Create Teams</a>
+                    <a href="" class="myBtn" id="btnCreateTeams">Create Teams</a>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">0</span>
+                      <span class="input-group-text" id="countTeam1">0</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Team 1" aria-label="" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Team 2" aria-label="" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Team 1" aria-label="" readonly aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Team 2" aria-label="" readonly aria-describedby="basic-addon1">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">0</span>
+                      <span class="input-group-text" id="countTeam2">0</span>
                     </div>
                 </div>                
                 <div class="heading">
-                    <a href="#" class="myBtn">2</a>
-                    <a href="#" class="myBtn">3</a>
-                    <a href="#" class="myBtn">2</a>
-                    <a href="#" class="myBtn">3</a>
+                    <a href="" class="myBtn" id="increase2team1">2</a>
+                    <a href="" class="myBtn" id="increase3team1">3</a>
+                    <a href="" class="myBtn" id="increase2team2">2</a>
+                    <a href="" class="myBtn" id="increase3team2">3</a>
                 </div>
             </div>
         </div>
@@ -163,21 +163,7 @@
         <p>Copyright © 2021 Kevin Loipeldinger. All Rights Reserved.</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(window).on('scroll', function() {
-            let header = $(document).find('header');
-            if(window.scrollY > 0) {
-                header.addClass('sticky');
-            } else {
-                header.removeClass('sticky');
-            }
-        });
-        function toggleMenu() {
-            let menuToggle = $(document).find('.toggle');
-            let menu = $(document).find('.myMenu');
-            menuToggle.toggleClass('active');
-            menu.toggleClass('active');
-        }
+    <script type="text/javascript" src="code.js">
     </script>
 </body>
 </html>

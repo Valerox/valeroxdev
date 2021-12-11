@@ -340,6 +340,9 @@ img
     text-align: center;
     padding: 10px;
 }
+.cardGameRedBorder {
+    border: 3px solid red;
+}
 /*Responsive*/
 @media (max-width: 991px)
 {
